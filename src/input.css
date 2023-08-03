@@ -3,7 +3,24 @@
 @tailwind utilities;
 
 .container{
-    max-width: 130rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 1.5rem;
+}
+
+@layer components{
+    .header__nav li{
+    @apply py-[.6rem] px-[1.5rem]
+    }
+    
+
+.header{
+   @apply bg-light-dark h-[4.5rem] w-full
+}
+}
+.header__wrapper{
+    @apply flex justify-between
+}
+.header__actions{
+    @apply lg:flex 
 }
